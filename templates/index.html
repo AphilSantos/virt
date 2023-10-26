@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+</head>
+<body>
+    <h1>Welcome {{first_name}} !</h1>
+    <p>This is my first webpage!</p>
+
+    <H3>favorite pizza:</H3>
+    {% for pizza in favorite_pizza %}
+    {{pizza}} <br>
+    {% endfor %}
+
+    <br>
+
+    <p>My favorite among these is {{favorite_pizza.0}}</p>
+</body>
+</html>
+
